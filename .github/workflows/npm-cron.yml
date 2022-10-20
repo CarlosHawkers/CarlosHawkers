@@ -4,9 +4,9 @@ on:
   workflow_dispatch:
 
   push:
-    branches: [master]
+    branches: [main]
   pull_request:
-    branches: [master]
+    branches: [main]
 
 jobs:
   build:
@@ -26,4 +26,4 @@ jobs:
           git config user.email ${{ secrets.EMAIL_GMAIL }}
           git add README.md
           git commit -m "[bot] Update README"
-          git push origin master
+          git push origin main
