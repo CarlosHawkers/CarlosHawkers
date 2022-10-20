@@ -21,4 +21,7 @@ jobs:
       - run: npm run update-readme
         env:
           EMAIL_GMAIL: ${{ secrets.EMAIL_GMAIL }}
+      - run: |
+          git config user.name 'CarlosHawkers'
+
 
