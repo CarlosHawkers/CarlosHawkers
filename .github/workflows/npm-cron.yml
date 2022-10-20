@@ -22,7 +22,7 @@ jobs:
         env:
           EMAIL_GMAIL: ${{ secrets.EMAIL_GMAIL }}
       - run: |
-          git config user.name 'CarlosHawkers
+          git config user.name 'CarlosHawkers'
           git add README.md
           git add package-lock.json
           git commit -m "[bot] Update README"
